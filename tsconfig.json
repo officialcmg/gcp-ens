@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "module": "CommonJS",
+      "moduleResolution": "node",
+      "target": "ES2022",
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "skipLibCheck": true,
+      "strict": true,
+      "outDir": "./lib",
+      "rootDir": "./src"
+    },
+    "include": ["src/**/*.ts"],
+    "exclude": ["node_modules", "lib"]
+  }
+  
