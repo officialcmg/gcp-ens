@@ -1,8 +1,8 @@
+// src/fetchgraph.ts
 import { gql, request } from 'graphql-request';
-import dotenv from 'dotenv';
-dotenv.config();
 
-const url: string = process.env.SUBGRAPH_URL || '';
+
+const url: string = "https://api.studio.thegraph.com/query/89559/ensregistry/v0.0.4";
 
 if (!url) {
   throw new Error('SUBGRAPH_URL environment variable is not defined.');

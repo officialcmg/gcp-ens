@@ -1,4 +1,5 @@
-import { getAgent } from './agentStore';
+// pages/api/chat.ts entry point
+import { getAgent } from '../../src/agentStore';
 import { HumanMessage } from "@langchain/core/messages";
 
 
@@ -62,3 +63,6 @@ export default async function handler(req: Request) {
     );
   }
 }
+
+// Export the handler as the fetch event for Cloudflare Workers
+export { handler as fetch };
